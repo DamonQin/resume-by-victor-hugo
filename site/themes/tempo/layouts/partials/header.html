@@ -4,27 +4,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tempo</title>
+  <title>{{ .Title }}</title>
   <meta name="description" content="">
   <meta name="author" content="">
+
+  {{ with eq (getenv "NODE_ENV") "production" }}
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  {{ end }}
 
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <link rel="shortcut icon" href="{{ "/img/favicon.ico" | relURL }}" type="image/x-icon">
+  <link rel="apple-touch-icon" href="{{ "/img/apple-touch-icon.png" | relURL }}">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ "/img/apple-touch-icon-72x72.png" | relURL }}">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ "/img/apple-touch-icon-114x114.png" | relURL }}">
 
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="{{ "/css/bootstrap.css" | relURL }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/fonts/font-awesome/css/font-awesome.css" | relURL }}">
 
-  <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-  <link href="css/owl.theme.css" rel="stylesheet" media="screen">
-  
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+  <link href="{{ "/css/owl.carousel.css" | relURL }}" rel="stylesheet" media="screen">
+  <link href="{{ "/css/owl.theme.css" | relURL }}" rel="stylesheet" media="screen">
+
+  <link rel="stylesheet" type="text/css" href="{{ "/css/style.css" | relURL }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/css/animate.min.css" | relURL }}">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <script type="text/javascript" src="{{ "/js/modernizr.custom.js" | relURL }}"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

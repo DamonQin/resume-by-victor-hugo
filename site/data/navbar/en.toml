@@ -1,0 +1,28 @@
+[[item]]
+name = "HOME"
+url = "home"
+sort = 1
+[[item]]
+name = "SERVICES"
+url = "services-section"
+sort = 2
+[[item]]
+name = "PORTFOLIO"
+url = "works-section"
+sort = 3
+[[item]]
+name = "ABOUT"
+url = "about-section"
+sort = 4
+[[item]]
+name = "TEAM"
+url = "team-section"
+sort = 5
+[[item]]
+name = "TESTIMONIALS"
+url = "testimonials-section"
+sort = 6
+[[item]]
+name = "CONTACT"
+url = "contact-section"
+sort = 7
