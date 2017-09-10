@@ -1,4 +1,4 @@
 +++
-weight = 3
+weight = 1
 tmpl = "section_about"
 +++

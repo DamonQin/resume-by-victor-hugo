@@ -3,11 +3,15 @@
 
 {{ partial "navbar.html" (index .Site.Data.navbar .Site.Language.Lang) }}
 
+{{/* This is accosiate with menus */}}
+{{ $modals := (index .Site.Data.navbar .Site.Language.Lang).item }}
+
 {{ range $index, $page := where (.Data.Pages.ByParam "weight") "Section" "home" }}
   {{ $params := dict "root" . "page" $page }}
   {{ $widget := printf "%s.html" $page.Params.tmpl }}
-  {{ printf "%#v" $index }}
+  {{ with and ($m := index $modals $index) $m.visible  }}
   {{ partial $widget $params }}
+  {{ end }}
 {{ end }}
 
 {{ partial "widgets/portfolio_item_modal.html" . }}

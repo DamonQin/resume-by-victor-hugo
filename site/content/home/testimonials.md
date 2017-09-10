@@ -1,4 +1,4 @@
 +++
-weight = 5
+weight = 3
 tmpl = "section_testimonials"
 +++

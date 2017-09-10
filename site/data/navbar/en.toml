@@ -1,28 +1,40 @@
 [[item]]
 name = "HOME"
-url = "home"
+url = "#home"
 sort = 1
-[[item]]
-name = "SERVICES"
-url = "services-section"
-sort = 2
-[[item]]
-name = "PORTFOLIO"
-url = "works-section"
-sort = 3
+visible = true
 [[item]]
 name = "ABOUT"
-url = "about-section"
+url = "#about-section"
+sort = 2
+visible = true
+[[item]]
+name = "EXPERIENCES"
+url = "#team-section"
+sort = 3
+visible = true
+[[item]]
+name = "PROJECTS"
+url = "#testimonials-section"
 sort = 4
+visible = true
 [[item]]
-name = "TEAM"
-url = "team-section"
+name = "PORTFOLIO"
+url = "#works-section"
 sort = 5
+visible = true
 [[item]]
-name = "TESTIMONIALS"
-url = "testimonials-section"
+name = "SKILLS"
+url = "#services-section"
 sort = 6
+visible = true
 [[item]]
 name = "CONTACT"
-url = "contact-section"
+url = "#contact-section"
 sort = 7
+visible = true
+[[item]]
+name = "中文"
+url = "/zh"
+sort = 8
+visible = true

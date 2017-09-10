@@ -1,4 +1,4 @@
 +++
-weight = 2
+weight = 4
 tmpl = "section_portfolio"
 +++

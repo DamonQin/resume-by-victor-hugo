@@ -7,23 +7,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html"><i class="fa fa-flag-checkered fa-flip-horizontal"></i> Tempo<strong></strong></a>
+      <a class="navbar-brand" href="{{ "/" | relLangURL }}"><strong><i class="fa fa-code"></i></strong> <strong>Damon</strong></a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        {{/* {{ printf "%s" . }} */}}
-        {{ range . }}
-        <li><a href="#{{ .url | lower }}" class="page-scroll">{{ .name }}</a></li>
+        {{ range (sort .item "sort" "asc") }}
+        {{ if .visible }}
+        <li><a href="{{ .url }}" class="page-scroll">{{ .name }}</a></li>
         {{ end }}
-
-        {{/* <li><a href="#home" class="page-scroll">Home</a></li>
-        <li><a href="#services-section" class="page-scroll">Services</a></li>
-        <li><a href="#works-section" class="page-scroll">Portfolio</a></li>
-        <li><a href="#about-section" class="page-scroll">About</a></li>
-        <li><a href="#team-section" class="page-scroll">Team</a></li>
-        <li><a href="#testimonials-section" class="page-scroll">Testimonials</a></li>
-        <li><a href="#contact-section" class="page-scroll">Contact</a></li> */}}
+        {{ end }}
       </ul>
     </div>
   </div>

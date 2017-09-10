@@ -1,6 +1,40 @@
-[[zh.menu]]
-name = "3333"
+[[item]]
+name = "首页"
+url = "#home"
+sort = 1
+visible = true
+[[item]]
+name = "关于"
+url = "#about-section"
+sort = 2
+visible = true
+[[item]]
+name = "工作经历"
+url = "#team-section"
+sort = 3
+visible = true
+[[item]]
+name = "项目"
+url = "#testimonials-section"
+sort = 4
+visible = true
+[[item]]
+name = "案例截图"
+url = "#works-section"
+sort = 5
+visible = true
+[[item]]
+name = "技能"
+url = "#services-section"
+sort = 6
+visible = true
+[[item]]
+name = "联系我"
+url = "#contact-section"
+sort = 7
+visible = true
+[[item]]
+name = "EN"
 url = "/"
-[[zh.menu]]
-name = "4444"
-url = "/"
+sort = 8
+visible = true
