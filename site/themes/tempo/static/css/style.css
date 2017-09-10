@@ -630,11 +630,19 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 
 .unstyled li {
 	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
-  color: #FFFFFF;
+	color: rgba(255, 255, 255, 0.6);
   display: inline-block;
   font-style: italic;
   margin: 0 0 10px;
   padding: 0 5px;
+}
+
+.project-img {
+	padding-bottom: 60px;
+}
+
+.project-img img {
+	max-width: 100px;
 }
 
 @media (max-width: 768px) {

@@ -8,13 +8,13 @@
       <h2>{{ .caption | safeHTML }}</h2>
       <hr>
       <div class="clearfix"></div>
-      <p>------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ .desc | safeHTML }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;------------------</p>
+      <p>---------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ .desc | safeHTML }} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---------</p>
     </div>
     <div id="row">
       {{ range .experiences}}
       <div class="col-md-3 col-sm-6 team wow fadeInUp" data-wow-delay="{{ .animation_delay }}">
         <div class="thumbnail">
-          <img src="{{ .thumbnail | relURL }}" alt="..." class="img-circle team-img">
+          <img src="{{ .thumbnail | relURL }}" alt="..." class="img-circle team-img" style="border: 2px solid #5b777f;">
           <div class="caption">
             <h3>{{ .company_name }}</h3>
             <p>{{ .time | safeHTML }}</p>

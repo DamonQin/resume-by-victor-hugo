@@ -11,18 +11,22 @@
     <div class="row">
       <div class="col-md-8 col-md-offset-2">
         <div id="testimonial" class="owl-carousel owl-theme wow fadeInUp" data-wow-delay="200ms">
+          {{ range .projects }}
           <div class="item">
-            <img src="{{ "" | relURL }}" alt="..." class="img-circle team-img">
-            <p>The most subscribed and viewed photography show on the interweb, presented by an asian dude with British accent. DRTV is turning its success to be the most popular photography show around the world.</p>
-            <p><strong>DIGITALREV TV</strong></p>
+            <div class="project-img">
+              <a {{ with .url }} href="{{ . }}" target="_blank" {{ end }}>
+                <img src="{{ .img | relURL }}" alt="{{ .name | safeHTML }}" class="img-rounded team-img">
+              </a>
+            </div>
+            <p>{{ .desc | safeHTML }}</p>
+            <p><a {{ with .url }} href="{{ . }}" target="_blank" {{ end }}><strong>{{ .name | safeHTML }}</strong></a></p>
             <ul class="unstyled">
-    					<li>ReactJS</li>
-    					<li>Redux</li>
-    					<li>NodeJS</li>
-    					<li>Javascript</li>
-    					<li>CSS3</li>
+              {{ range .tags }}
+    					<li>{{ . }}</li>
+              {{ end }}
     				</ul>
           </div>
+          {{ end }}
         </div>
       </div>
     </div>

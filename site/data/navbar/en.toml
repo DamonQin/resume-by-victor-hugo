@@ -27,7 +27,7 @@ visible = true
 name = "SKILLS"
 url = "#services-section"
 sort = 6
-visible = true
+visible = false
 [[item]]
 name = "CONTACT"
 url = "#contact-section"

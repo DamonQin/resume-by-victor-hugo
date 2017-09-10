@@ -1,27 +1,32 @@
+{{ $root := .root }}
+{{ $page := .page }}
+
+{{ with .page.Params.info }}
 <div id="works-section" class="text-center">
   <div class="container">
     <div class="section-title wow fadeInDown">
-      <h2>Our <strong>Portfolio</strong></h2>
+      <h2>{{ .caption | safeHTML }}</h2>
       <hr>
       <div class="clearfix"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamcommodo nibh ante facilisis.</p>
     </div>
-    
+
     <div class="row">
       <div class="portfolio-items">
+        {{ range .works }}
         <div class="col-sm-6 col-md-3 col-lg-3 web">
           <div class="portfolio-item wow fadeInUp" data-wow-delay="200ms">
             <div class="hover-bg">
-              <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                <div class="hover-text">
-                  <h4>Project Title</h4> Web Design
-                  <div class="clearfix"></div>
-                  <i class="fa fa-plus"></i> </div>
-                <img src="{{ "/img/portfolio/01.jpg" | relURL }}" class="img-responsive" alt="Project Title"> </a>
+              <div class="hover-text">
+                <h4>{{ .name | safeHTML }}</h4>
+                <div class="clearfix"></div>
+              </div>
+              <img src="{{ .img | relURL }}" class="img-responsive" alt="{{ .name }}">
             </div>
           </div>
         </div>
+        {{ end }}
       </div>
     </div>
   </div>
 </div>
+{{ end }}

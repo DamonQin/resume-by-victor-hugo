@@ -19,7 +19,7 @@ url = "#testimonials-section"
 sort = 4
 visible = true
 [[item]]
-name = "案例截图"
+name = "案例展示"
 url = "#works-section"
 sort = 5
 visible = true
@@ -27,7 +27,7 @@ visible = true
 name = "技能"
 url = "#services-section"
 sort = 6
-visible = true
+visible = false
 [[item]]
 name = "联系我"
 url = "#contact-section"
