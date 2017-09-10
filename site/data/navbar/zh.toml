@@ -32,7 +32,7 @@ visible = true
 name = "联系我"
 url = "#contact-section"
 sort = 7
-visible = true
+visible = false
 [[item]]
 name = "EN"
 url = "/"
