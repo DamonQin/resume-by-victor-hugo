@@ -8,6 +8,12 @@
     <p class="wow fadeInDown">{{ .subtitle | safeHTML }}</p>
     {{/* <p class="wow fadeInDown">{{ .position | safeHTML }}</p> */}}
     <a href="#about-section" class="btn btn-default btn-lg page-scroll wow fadeInUp" data-wow-delay="200ms">{{ .button }}</a>
+
+    <ul class="social-container wow fadeInUp">
+      {{ range $root.Params.social }}
+      <li><a href="{{ .link | safeURL }}" target="_blank" class="d-social fa fa-{{ .icon }}"><span class="label">{{ .medium }}</span></a></li>
+      {{ end }}
+    </ul>
   </div>
 </header>
 {{ end }}

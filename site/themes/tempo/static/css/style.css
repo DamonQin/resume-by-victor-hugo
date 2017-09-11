@@ -645,6 +645,47 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	max-width: 100px;
 }
 
+.social-container {
+	margin: 0;
+	padding: 60px 40px 0 40px;
+}
+.social-container li, .social-container a {
+	display: inline-block;
+}
+
+.d-social {
+	color: #d9e0e2;
+	text-decoration: none;
+  position: relative;
+	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.1);
+	width: 2em;
+  line-height: 2em;
+  font-size: 2em;
+	margin: .5em;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.d-social::before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none !important;
+}
+.d-social > .label {
+	display: none;
+}
+.d-social {
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+a.d-social:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
 @media (max-width: 768px) {
 .content {
 	padding: 40% 0 0;

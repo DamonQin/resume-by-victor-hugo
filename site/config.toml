@@ -2,6 +2,40 @@ baseurl = "/"
 DefaultContentLanguage = "en"
 theme = "tempo"
 
+[params]
+  name = "Damon Qin"
+
+[[params.social]]
+  medium = "Github"
+  icon = "github"
+  link = "https://github.com/DamonQin"
+
+[[params.social]]
+  medium = "Gitlab"
+  icon = "gitlab"
+  link = "https://gitlab.com/DamonQin"
+
+[[params.social]]
+  medium = "LinkedIn"
+  icon = "linkedin"
+  link = "https://www.linkedin.com/in/damonqin/"
+
+[[params.social]]
+  medium = "500px"
+  icon = "500px"
+  link = "https://500px.com/damonqin"
+
+[[params.social]]
+  medium = "Weibo"
+  icon = "weibo"
+  link = "http://weibo.com/aeonchinx"
+
+[[params.social]]
+  medium = "Email"
+  icon = "envelope-o"
+  link = "mailto:received@icloud.com"
+
+
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration

@@ -5,9 +5,8 @@
 
 {{/* This is accosiate with menus */}}
 {{ $modals := (index .Site.Data.navbar .Site.Language.Lang).item }}
-
 {{ range $index, $page := where (.Data.Pages.ByParam "weight") "Section" "home" }}
-  {{ $params := dict "root" . "page" $page }}
+  {{ $params := dict "root" $.Site "page" $page }}
   {{ $widget := printf "%s.html" $page.Params.tmpl }}
   {{ with and ($m := index $modals $index) $m.visible  }}
   {{ partial $widget $params }}
